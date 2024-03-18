@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="app.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plum - Microinternship Matching</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+  <style>
+    nav {
+      position: fixed; /* Added to make nav fixed at the top */
+      top: 0;
+      width: 100%; /* Ensure it spans the full width */
+      z-index: 100; /* Ensure it stays on top of other content */
+      background-color: #FFF; /* Optional: Added background color to ensure text is readable */
+    }
+    body {
+      padding-top: 60px; /* Added to ensure body content does not hide behind the fixed nav */
+    }
+    /* Your existing CSS for .dropdown, .dropdown-content, etc. */
+  </style>
 </head>
 <body>
   <nav>
