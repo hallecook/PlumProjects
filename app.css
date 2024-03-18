@@ -1,0 +1,1105 @@
+@import url('https://use.fontawesome.com/releases/v5.15.1/css/all.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #7C2946;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+}
+/* Adjust the position and size of the dropdown menu button */
+.dropbtn {
+    cursor: pointer;
+    width: 1000px; 
+    height: 1000px;
+  }
+  
+  /* Style the dropdown container to ensure it's fixed and follows scrolling */
+  .dropdown {
+    position: fixed; /* Keeps the dropdown menu visible and in position during scrolling */
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensures it's above other content */
+  }
+  
+  /* Control the appearance of the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #999999;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Increase the font size for the dropdown links for better readability */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px; /* Increased font size */
+  }
+  
+  /* Hover effect for dropdown links */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Class to show the dropdown content */
+  .show { display: block; }
+
+
+header {
+  position: relative;
+  height: 640px;
+  background-image: url('https://i.ibb.co/0hPgfZ5/Screen-Shot-2024-03-14-at-2-56-08-PM.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.header-content {
+  position: absolute;
+  top: 400px; /* Adjusted to lower the logo/business name/slogan */
+  left: 100px; /* Provides spacing from the left */
+  color: #ffffff;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.branding .logo {
+  height: 150px; /* Logo height to align with the business name */
+}
+
+.branding h1 {
+  font-size: 500px;
+  font-family: 'Outfit', sans-serif;
+  margin-left: 30px; /* Space between logo and business name */
+  color: #7C2946; /* Ensures business name is white */
+}
+
+.header-content h2 {
+  font-size: 60px;
+  font-family: 'Outfit', sans-serif;
+  margin-top: 15px; /* Space above the slogan */
+  color: white; /* Ensures slogan is white */
+}
+
+@media (max-width: 1440px) {
+  .header-content {
+    left: 10%; /* Adjusts spacing for smaller devices */
+  }
+
+  .branding .logo {
+    height: 90px; /* Adjust logo size for smaller devices */
+  }
+
+  .branding h1 {
+    font-size: 100px; /* Adjust business name size for smaller devices */
+  }
+
+  .header-content h2 {
+    font-size: 25px; /* Adjust slogan size for smaller devices */
+    margin-left: 115px
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+}
+
+/* Additional responsive adjustments can be made for smaller screen sizes */
+.mission-statement {
+  text-align: center;
+  padding: 50px 10%;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  background-color: white; /* Adjust if you have a specific background color in mind */
+}
+
+.mission-statement h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem; /* Adjust size as needed */
+  margin-bottom: 20px; /* Space between the title and the mission text */
+}
+
+.mission-statement p {
+  font-size: 1rem; /* Adjust size as needed */
+  line-height: 1.6; /* Adjust line height for readability */
+  margin-bottom: 20px; /* Space between paragraphs */}
+
+.links-container {
+  display: flex;
+  justify-content: center; /* Centers the boxes horizontally */
+  gap: 30px; /* Gap between the two link boxes */
+  padding: 20px; /* Space inside the container */
+  margin-top: 80px; /* Space above the container */
+}
+
+.link-box {
+  background-color: #7C2946; /* Plum color */
+  border-radius: 20px; /* Rounded corners for the boxes */
+  padding: 40px 80px; /* Padding inside each link box */
+  color: white; /* Text color */
+  text-decoration: none; /* Removes underline from the links */
+  display: flex; /* Enables flex layout inside the link box */
+  align-items: center; /* Centers items vertically inside the link box */
+  font-family: 'Outfit', sans-serif; /* Font family for the text */
+  gap: 20px; /* Space between icon and text */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.link-box:hover {
+  background-color: #622042; /* Darker shade of plum on hover */
+  transform: scale(1.05); /* Slightly enlarges the link boxes on hover */
+}
+
+.fa-graduation-cap, .fa-briefcase {
+  font-size: 1.5rem; /* Size of the icons */
+}
+
+span {
+  font-size: 2rem; /* Size of the text */
+}
+.emotion-section {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.emotion-section hr {
+  border: none;
+  height: 2px;
+  background-color: #7C2946; /* Plum color */
+  margin: 20px auto; /* Center the line and add some vertical space */
+  width: 80%; /* Adjust the width of the line as per design requirements */
+}
+
+.emotion-section p {
+  font-size: 1.4rem;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.emotion-section .highlight {
+  color: #7C2946; /* Plum color for highlighted text */
+  font-size: 1.5rem; /* Slightly larger font size for emphasis */
+}
+.values-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.values-heading {
+  font-family: 'Outfit', sans-serif;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.value-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.value-box {
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1; /* This will make all boxes the same size */
+  color: black;
+  margin-bottom: 30px; /* Space between the boxes vertically */
+}
+
+.value-box h3 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.value-box p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  margin: 0; /* Removes default margin to ensure boxes are the same size */
+  height: 100%; /* Makes sure all paragraphs are the same height */
+}
+.how-it-works-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  gap: 150px;
+  margin-top: 10px;
+}
+
+.text-content {
+  width: ;
+  text-align: left; /* Align the text to the left */
+  margin-left: 20px
+}
+
+.text-content h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.text-content p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 1.3rem;
+}
+
+.image-content {
+  width: 100%;
+}
+
+.image-content img {
+  width: 100%; /* Adjust if the image is too large or small */
+  max-width: 400px; /* Set a maximum width for the image */
+  border-radius: 10px; /* Optional: if you want rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .how-it-works-container {
+    flex-direction: column;
+    align-items: center; /* Center align for mobile */
+  }
+
+  .text-content,
+  .image-content {
+    width: 100%;
+  }
+
+  .image-content img {
+    max-width: 100%;
+    margin-top: 20px; /* Space between text and image */
+  }
+}
+.newsletter-banner {
+  background-color: #7C2946; /* Plum color */
+  padding: 10px 0; /* Larger gap from the top and bottom */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  width: 100%; /* Banner spans the full page width */
+}
+
+.newsletter-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 960px; /* Adjust based on your layout preference for content width */
+  width: 100%; /* Ensures content respects the max-width */
+}
+
+.newsletter-content i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.newsletter-content p {
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  margin: 0 10px; /* Compact the paragraph to make it shorter */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 0; /* Does not allow the text to grow */
+}
+
+.newsletter-content input {
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  flex-grow: 2; /* Gives more room for the input */
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  min-width: 240px; /* Ensures the input box is reasonably wide */
+}
+
+.newsletter-content button {
+  background-color: white;
+  color: #7C2946; /* Plum color */
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-content button:hover {
+  background-color: #9b4668; /* Lighter plum color for the hover state */
+}
+
+.about-us {
+  text-align: left;
+  margin-top: 40px; /* Adjust as needed for spacing */
+  padding: 0 20px; /* Padding on the sides */
+}
+
+.about-us h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-us .arrow-divider {
+  width: 100%; /* Full width of the container */
+  height: 2px; /* Thickness of the divider */
+  background-color: #7C2946; /* Plum brand color */
+  margin-bottom: 20px; /* Space below the divider */
+}
+
+.about-us p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.6; /* For better readability */
+}
+.team-section {
+  text-align: left;
+  padding: 20px;
+}
+
+.team-section h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #7C2946;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.team-member {
+  background: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.profile-pic {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 50%; /* Circle shape */
+  margin-bottom: 15px;
+  object-fit: cover; /* Ensure the images are nicely cropped */
+}
+
+.team-member h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr; /* Stack the members on smaller screens */
+  }
+}
+.footer {
+  background-color: #7C2946; /* Plum brand color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  width: 100vw; /* Set footer width to the viewport width */
+  position: relative; /* Relative positioning */
+  left: 50%; /* Move to the center */
+  right: 50%; /* Move to the center */
+  margin-left: -50vw; /* Pull to the left edge */
+  margin-right: -50vw; /* Pull to the right edge */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 80px; /* Adjust size as needed */
+  margin-right: 60px;
+}
+
+.footer-left h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1px;
+}
+
+.footer-right p {
+  font-family: 'Lato', sans-serif;
+  margin: 0 10px; /* Spacing between items */
+  display: flex;
+  align-items: center;
+}
+
+.footer-right i {
+  margin-right: 5px;
+}
+
+/* Responsive adjustments for the footer */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px; /* Adjust padding for smaller screens */
+    margin-left: -20px; /* Align with the left edge */
+    margin-right: -20px; /* Align with the right edge */
+    width: calc(100vw - 40px); /* Adjust for padding */
+  }
+  
+  .footer-left, .footer-right {
+    justify-content: center;
+  }
+  
+  .footer-right p {
+    justify-content: center;
+    margin: 5px 0; /* Add some space between contact items */
+  }
+}
+
+@import url('https://use.fontawesome.com/releases/v5.15.1/css/all.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #7C2946;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+}
+.students-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px; /* Adjust this value as needed to prevent overlap with the navigation bar */
+}
+
+.students-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px; /* Adjust this value as needed to fit your design */
+  margin-bottom: 50px; /* Space before the next section */
+}
+
+.header-text {
+  width: 48%; /* Adjust this value as needed */
+}
+
+.header-text h2 {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.header-text h1 {
+  font-family: 'Outfit', sans-serif;
+  color: black;
+  font-size: 48px; /* Adjust this value as needed for emphasis */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.header-text p {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.header-images {
+  width: 48%; /* Adjust this value as needed */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.image-block {
+  border-radius: 20px;
+  height: 300px; /* Adjust this value as needed */
+}
+
+.dark-fill {
+  background-color: #7C2946; /* Your Plum brand color */
+}
+
+.light-fill {
+  background-color: #9b4668; /* A lighter shade of your Plum brand color */
+}
+
+.grey-overlay {
+  background-color: rgba(128, 128, 128, 0.5); /* Grey overlay */
+}
+
+.header-images img {
+  border-radius: 20px;
+  height: 300px; /* Adjust this value as needed */
+  width: 100%;
+  object-fit: cover;
+}
+.benefits-section {
+  text-align: center;
+  background-color: #f2f2f2; /* or any light shade from your branding */
+  padding: 40px 0;
+}
+
+.benefits-section h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  color: #7C2946;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.benefit {
+  display: inline-block;
+  margin: 0 60px; /* Adjust the spacing between icons as needed */
+}
+
+.benefit i {
+  font-size: 2.5rem; /* Icon size */
+  margin-bottom: 20px; /* Space below icon */
+  color:#7C2946;
+  display: block; /* To ensure the icon sits above the text */
+}
+
+.benefit p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  color: #7C2946; /* Slightly darker for contrast */
+}
+
+/* Add responsive adjustments if necessary */
+@media (max-width: 768px) {
+  .benefit {
+    display: block; /* Stack them on top of each other on smaller screens */
+    margin-bottom: 20px;
+  }
+}
+
+/* Don't forget to include the Font Awesome library in your HTML */
+.how-it-works-section {
+  text-align: center; /* Center align the text */
+  padding: 40px 0; /* Add some padding above and below */
+}
+
+.how-it-works-section h2 {
+    border-bottom: 3px solid #7C2946; /* Plum color line */
+  display: inline-block; /* Ensures the border only spans the text width */
+  padding-bottom: 10px; /* Optional: Adds some space between the text and the line */
+  margin-bottom: 20px; /* Space below the heading */
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 2rem; /* Larger size for the title */
+  margin-bottom: 20px; /* Add some space below the heading */
+  color: #333; /* Dark text for readability */
+}
+
+.how-it-works-section p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem; /* Smaller size for the body text */
+  color: #333; /* Dark text for readability */
+  margin-bottom: 20px; /* Add some space between paragraphs */
+   margin: 0 auto; /* Centers the paragraphs within the section */
+  max-width: 800px; /* Adjust the max-width as needed for your design */
+  margin-bottom: 20px; /* Adds 20 pixels of space below each paragraph */
+}
+
+/* Add responsive design adjustments if necessary */
+@media (max-width: 768px) {
+  .how-it-works-section {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .how-it-works-section h2 {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .how-it-works-section p {
+    font-size: 0.9rem; /* Adjust paragraph size for smaller screens */
+  }
+}
+.profile-section {
+  text-align: center;
+  padding: 40px;
+  background: #FFF; /* or any color you prefer for the section background */
+}
+
+.profile-section h2 {
+  font-family: 'Outfit', sans-serif;
+  color: #333; /* or your preferred text color */
+  font-size: 1.75rem; /* Adjusted for larger text */
+  margin-bottom: 30px; /* More space above the button */
+}
+
+.profile-button {
+  display: inline-block;
+  padding: 20px 40px; /* Larger padding for a larger button */
+  border-radius: 50px; /* Fully rounded corners for the button */
+  background-color: #7C2946; /* Plum color for the button */
+  color: white; /* White text on the button */
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem; /* Larger font size for the button */
+  text-decoration: none;
+  border: 3px solid white; /* Thicker border for emphasis */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  margin-top: 20px; /* Optional: Extra space above the button if needed */
+}
+
+.profile-button:hover {
+  background-color: white; /* Button color changes on hover */
+  color: #7C2946; /* Text color changes on hover */
+}
+.footer {
+  background-color: #7C2946; /* Plum brand color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  width: 100vw; /* Set footer width to the viewport width */
+  position: relative; /* Relative positioning */
+  left: 50%; /* Move to the center */
+  right: 50%; /* Move to the center */
+  margin-left: -50vw; /* Pull to the left edge */
+  margin-right: -50vw; /* Pull to the right edge */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 80px; /* Adjust size as needed */
+  margin-right: 60px;
+}
+
+.footer-left h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1px;
+}
+
+.footer-right p {
+  font-family: 'Lato', sans-serif;
+  margin: 0 10px; /* Spacing between items */
+  display: flex;
+  align-items: center;
+}
+
+.footer-right i {
+  margin-right: 5px;
+}
+
+/* Responsive adjustments for the footer */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px; /* Adjust padding for smaller screens */
+    margin-left: -20px; /* Align with the left edge */
+    margin-right: -20px; /* Align with the right edge */
+    width: calc(100vw - 40px); /* Adjust for padding */
+  }
+  
+  .footer-left, .footer-right {
+    justify-content: center;
+  }
+  
+  .footer-right p {
+    justify-content: center;
+    margin: 5px 0; /* Add some space between contact items */
+  }
+}
+.employers-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* Adjust this value as needed to prevent overlap with the navigation bar */
+  }
+  
+  .employers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px; /* Adjust this value as needed to fit your design */
+    margin-bottom: 50px; /* Space before the next section */
+  }
+  
+  .header-text {
+    width: 48%; /* Adjust this value as needed */
+  }
+  
+  .header-text h2 {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .header-text h1 {
+    font-family: 'Outfit', sans-serif;
+    color: black;
+    font-size: 48px; /* Adjust this value as needed for emphasis */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .header-text p {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .header-images {
+    width: 48%; /* Adjust this value as needed */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .image-block {
+    border-radius: 20px;
+    height: 300px; /* Adjust this value as needed */
+  }
+  
+  .dark-fill {
+    background-color: #7C2946; /* Your Plum brand color */
+  }
+  
+  .light-fill {
+    background-color: #9b4668; /* A lighter shade of your Plum brand color */
+  }
+  
+  .grey-overlay {
+    background-color: rgba(128, 128, 128, 0.5); /* Grey overlay */
+  }
+  
+  .header-images img {
+    border-radius: 20px;
+    height: 300px; /* Adjust this value as needed */
+    width: 100%;
+    object-fit: cover;
+  }
+  .employer-benefits-section {
+    text-align: center;
+    background-color: #f2f2f2; /* or any light shade from your branding */
+    padding: 40px 0;
+  }
+  
+  .employer-benefits-section h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    color: #7C2946;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .employer-benefit {
+    display: inline-block;
+    margin: 0 60px; /* Adjust the spacing between icons as needed */
+  }
+  .employer-benefit i {
+    font-size: 2.5rem; /* Icon size */
+    margin-bottom: 20px; /* Space below icon */
+    color:#7C2946;
+    display: block; /* To ensure the icon sits above the text */
+  }
+  .employer-benefit p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    color: #7C2946; /* Slightly darker for contrast */
+  }
+  
+  /* Add responsive adjustments if necessary */
+  @media (max-width: 768px) {
+    .benefit {
+      display: block; /* Stack them on top of each other on smaller screens */
+      margin-bottom: 20px;
+    }
+  }
+  .employer-how-it-works-section {
+    text-align: center; /* Center align the text */
+    padding: 40px 0; /* Add some padding above and below */
+  }
+  
+  .employer-how-it-works-section h2 {
+      border-bottom: 3px solid #7C2946; /* Plum color line */
+    display: inline-block; /* Ensures the border only spans the text width */
+    padding-bottom: 10px; /* Optional: Adds some space between the text and the line */
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 2rem; /* Larger size for the title */
+    margin-bottom: 20px; /* Add some space below the heading */
+    color: #333; /* Dark text for readability */
+  }
+  
+  .employer-how-it-works-section p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem; /* Smaller size for the body text */
+    color: #333; /* Dark text for readability */
+    margin-bottom: 20px; /* Add some space between paragraphs */
+     margin: 0 auto; /* Centers the paragraphs within the section */
+    max-width: 800px; /* Adjust the max-width as needed for your design */
+    margin-bottom: 20px; /* Adds 20 pixels of space below each paragraph */
+  }
+  
+  /* Add responsive design adjustments if necessary */
+  @media (max-width: 768px) {
+    .employer-how-it-works-section {
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .employer-how-it-works-section h2 {
+      font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+  
+    .employer-how-it-works-section p {
+      font-size: 0.9rem; /* Adjust paragraph size for smaller screens */
+    }
+  }
+  .project-section {
+    text-align: center;
+    padding: 40px;
+    background: #FFF; /* or any color you prefer for the section background */
+  }
+  
+  .project-section h2 {
+    font-family: 'Outfit', sans-serif;
+    color: #333; /* or your preferred text color */
+    font-size: 1.75rem; /* Adjusted for larger text */
+    margin-bottom: 30px; /* More space above the button */
+  }
+  
+  .project-button {
+    display: inline-block;
+    padding: 20px 40px; /* Larger padding for a larger button */
+    border-radius: 50px; /* Fully rounded corners for the button */
+    background-color: #7C2946; /* Plum color for the button */
+    color: white; /* White text on the button */
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem; /* Larger font size for the button */
+    text-decoration: none;
+    border: 3px solid white; /* Thicker border for emphasis */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    margin-top: 20px; /* Optional: Extra space above the button if needed */
+  }
+  
+  .project-button:hover {
+    background-color: white; /* Button color changes on hover */
+    color: #7C2946; /* Text color changes on hover */
+  }
+  .footer {
+    background-color: #7C2946; /* Plum brand color */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 100vw; /* Set footer width to the viewport width */
+    position: relative; /* Relative positioning */
+    left: 50%; /* Move to the center */
+    right: 50%; /* Move to the center */
+    margin-left: -50vw; /* Pull to the left edge */
+    margin-right: -50vw; /* Pull to the right edge */
+    box-sizing: border-box; /* Include padding in the width */
+  }
+  
+  .footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    height: 80px; /* Adjust size as needed */
+    margin-right: 60px;
+  }
+  
+  .footer-left h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1px;
+  }
+  
+  .footer-right p {
+    font-family: 'Lato', sans-serif;
+    margin: 0 10px; /* Spacing between items */
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-right i {
+    margin-right: 5px;
+  }
+  
+  /* Responsive adjustments for the footer */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      padding: 20px; /* Adjust padding for smaller screens */
+      margin-left: -20px; /* Align with the left edge */
+      margin-right: -20px; /* Align with the right edge */
+      width: calc(100vw - 40px); /* Adjust for padding */
+    }
+    
+    .footer-left, .footer-right {
+      justify-content: center;
+    }
+    
+    .footer-right p {
+      justify-content: center;
+      margin: 5px 0; /* Add some space between contact items */
+    }
+}
+.faq-section {
+    padding-top: 150px; /* Adjust as needed to ensure it's below the navbar */
+    padding-left: 0%; /* Adjust as needed to center the text appropriately */
+    max-width: 1100px; /* Adjust as needed for the maximum width of the section */
+    margin: 0 auto; /* Centers the section */
+  }
+  
+  .faq-header {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600; /* Outfit's semi-bold weight */
+    font-size: 3rem; /* Very large text size */
+    color: black;
+    text-align: left; /* Aligns the text to the left */
+    margin-bottom: 0.5rem; /* Small space above the underline */
+  }
+  
+  .faq-underline {
+    height: 4px; /* Thickness of the underline */
+    background-color: #7C2946; /* Plum brand color */
+    width: 100%; /* Full width of the container */
+  }
+  
+  /* Additional media query for responsiveness if required */
+  @media (max-width: 768px) {
+    .faq-section {
+      padding-left: 5%; /* Smaller left padding on smaller screens */
+    }
+    .faq-header {
+      font-size: 2rem; /* Smaller font size on smaller screens */
+    }
+  }
+  .faq-dropdown {
+    background: #f8f8f8; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between each FAQ item */
+    padding: 10px; /* Padding inside the dropdown */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    width:78%; /* Adjust width as needed */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .faq-question {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem; /* Larger size for questions */
+    color: #333; /* Dark color for readability */
+    cursor: pointer; /* Indicates this is clickable */
+  }
+  
+  .faq-answer {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #666; /* Slightly lighter color for answers */
+    padding-top: 10px; /* Space above the answer text */
+  }
+  
+  /* Style the summary element when details is open */
+  details[open] .faq-question {
+    color: #7C2946; /* Plum color when the dropdown is open */
+  }
+  

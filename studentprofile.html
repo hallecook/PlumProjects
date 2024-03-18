@@ -1,0 +1,73 @@
+</div>
+</header>
+<title>Dropdown Menu</title>
+<style>
+.dropbtn {
+  cursor: pointer;
+  width: 60px; /* Adjusted size */
+  height: 60px; /* Adjusted size */
+}
+
+.dropdown {
+  position: fixed; /* Keeps the dropdown menu visible and in position during scrolling */
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* Ensures it's above other content */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #999999;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px; /* Increased font size for better readability */
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.show { display: block; }
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+<img src="https://i.ibb.co/S0MVmCr/a6d008d4-73a1-4722-855c-5f12985adda1-1.png" alt="Menu" class="dropbtn">
+<div class="dropdown-content" id="dropdownContent">
+  <a href="index.html">Home</a>
+  <a href="students.html">For Students</a>
+  <a href="employers.html">For Employers</a>
+  <a href="FAQ.html">FAQs</a>
+</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  const dropBtn = document.querySelector('.dropbtn');
+  const dropdownContent = document.getElementById('dropdownContent');
+
+  dropBtn.onclick = function() {
+    dropdownContent.classList.toggle('show');
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show');
+      }
+    }
+  }
+});
+</script>
+
+</body>
+</html>
+<script type="text/javascript" src="https://form.jotform.com/jsform/240777006747159"></script>

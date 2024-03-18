@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plum - Microinternship Matching</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="students.html">For Students</a></li>
+      <li><a href="#employers.html">For Employers</a></li>
+      <li><a href="#FAQ.html">FAQs</a></li>
+    </ul>
+  </nav>
+  <div>
+  <div class="students-page-container">
+  <div class="students-header">
+    <div class="header-text">
+      <h2>For Students</h2>
+      <h1>Your next plum job is right next door.</h1>
+      <p>Are you looking for hands-on experience, but feeling lost in the shuffle of 1,000s of internship applicants?It’s hard to feel empowered in today’s job market. And with so many community college students working to make ends meet, who has the time to update LinkedIn profiles and send out lengthy applications?</p>
+        <p>We get it because we’ve been there.</p>
+        <p>That’s why we make it easy. Simply fill out your profile and let us connect you to your next opportunity with one of our local partners. Reconnect with your community, work on meaningful microinternship projects, and make connections that will last a lifetime.</p>
+    </div>
+    <div class="header-images">
+      <div class="image-block dark-fill"></div>
+      <img src="https://i.ibb.co/DRQG88D/students1.png" alt="Students collaborating">
+      <div class="image-block light-fill"></div>
+      <img src="https://i.ibb.co/kHQW7GB/students2.png" alt="Student working">
+      <div class="image-block dark-fill grey-overlay"></div>
+      <img src="https://i.ibb.co/7JqS8cD/students3.png" alt="Student thinking">
+    </div>
+  </div>
+</div>
+<title>Dropdown Menu</title>
+<style>
+  .dropbtn {
+    cursor: pointer;
+    width: 60px; /* Adjusted size */
+    height: 60px; /* Adjusted size */
+  }
+
+  .dropdown {
+    position: fixed; /* Keeps the dropdown menu visible and in position during scrolling */
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Ensures it's above other content */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #999999;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px; /* Increased font size for better readability */
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .show { display: block; }
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <img src="https://i.ibb.co/S0MVmCr/a6d008d4-73a1-4722-855c-5f12985adda1-1.png" alt="Menu" class="dropbtn">
+  <div class="dropdown-content" id="dropdownContent">
+    <a href="index.html">Home</a>
+    <a href="students.html">For Students</a>
+    <a href="employers.html">For Employers</a>
+    <a href="FAQ.html">FAQs</a>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const dropBtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.getElementById('dropdownContent');
+
+    dropBtn.onclick = function() {
+      dropdownContent.classList.toggle('show');
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        if (dropdownContent.classList.contains('show')) {
+          dropdownContent.classList.remove('show');
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
+<div class="benefits-section">
+  <h2>Why Apply For Our Microinternships?</h2>
+  <div class="benefit">
+    <i class="fas fa-clock"></i>
+    <p>Flexible schedules</p>
+  </div>
+  <div class="benefit">
+    <i class="fas fa-brain"></i> <!-- Example icon for 'Personalized Development' -->
+    <p>Personalized development opportunities</p>
+  </div>
+  <div class="benefit">
+    <i class="fas fa-handshake"></i>
+    <p>Empowering partnerships</p>
+  </div>
+</div>
+<div class="how-it-works-section">
+  <h2>How it works</h2>
+  <p>Once you create your profile and complete a screening interview with us, you have access to our project board and monthly newsletters. When you apply for a project, the business will be updated via email with your profile and resume. We will also recommend your profile to businesses and projects that align with your interests and experiences.</p>
+  <p>Projects are paid out in full after you complete a project through Square payroll. Please contact us or view our FAQ page if you have any more questions.</p>
+</div>
+<div class="profile-section">
+  <h2>Join the community and start your FREE student profile today!</h2>
+  <a href="/studentprofile.html" class="profile-button">Click here to create your profile</a>
+</div>
+ </div>
+<footer class="footer">
+  <div class="footer-left">
+    <img src="https://i.ibb.co/S0MVmCr/a6d008d4-73a1-4722-855c-5f12985adda1-1.png" alt="Plum Logo" class="footer-logo">
+    <h1>Plum</h1>
+  </div>
+  <div class="footer-right">
+    <p><i class="fas fa-envelope"></i> plummicrointernships@plum.com</p>
+    <p><i class="fab fa-linkedin"></i> linkedin.com/plum</p>
+    <p><i class="fas fa-phone"></i> (203) - 555 - 5555</p>
+  </div>
+</footer>

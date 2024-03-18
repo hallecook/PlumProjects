@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plum - Microinternship Matching</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="students.html">For Students</a></li>
+      <li><a href="employers.html">For Employers</a></li>
+      <li><a href="FAQ.html">FAQs</a></li>
+    </ul>
+  </nav>
+  <header>
+    <div class="header-content">
+      <div class="branding">
+        <img src="https://i.ibb.co/S0MVmCr/a6d008d4-73a1-4722-855c-5f12985adda1-1.png" alt="Plum Logo" class="logo">
+        <h1>Plum</h1>
+      </div>
+      <h2>Plum jobs hand picked</h2>
+    </div>
+  </header>
+  <title>Dropdown Menu</title>
+<style>
+  .dropbtn {
+    cursor: pointer;
+    width: 60px; /* Adjusted size */
+    height: 60px; /* Adjusted size */
+  }
+
+  .dropdown {
+    position: fixed; /* Keeps the dropdown menu visible and in position during scrolling */
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Ensures it's above other content */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #999999;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px; /* Increased font size for better readability */
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .show { display: block; }
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <img src="https://i.ibb.co/S0MVmCr/a6d008d4-73a1-4722-855c-5f12985adda1-1.png" alt="Menu" class="dropbtn">
+  <div class="dropdown-content" id="dropdownContent">
+    <a href="index.html">Home</a>
+    <a href="students.html">For Students</a>
+    <a href="employers.html">For Employers</a>
+    <a href="FAQ.html">FAQs</a>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const dropBtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.getElementById('dropdownContent');
+
+    dropBtn.onclick = function() {
+      dropdownContent.classList.toggle('show');
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        if (dropdownContent.classList.contains('show')) {
+          dropdownContent.classList.remove('show');
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
+
+ <section class="mission-statement">
+  <h2>Our mission</h2>
+  <p>At Plum, we believe that you don’t need to look far to find valuable talent and development experiences. Our mission is to empower communities by providing a flexible and safe platform that connects emerging CT State Community College talent with the businesses they grew up with through tech-focused microinternship projects.</p>
+  <p>With integrity, practicality, and community at our core, we’re not just building portfolios, we’re cultivating a future where everyone has a stake in their communities' prosperity.</p>
+   
+<div class="links-container">
+  <a href="students.html" class="link-box">
+    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    <span>For Students</span>
+  </a>
+
+  <a href="#employers.html" class="link-box">
+    <i class="fa fa-briefcase" aria-hidden="true"></i>
+    <span>For Employers</span>
+  </a>
+</div>
+<div class="emotion-section">
+  <hr>
+  <p>Only 24% of community college students in Connecticut receive their degree after 7 years of enrollment.</p>
+  <p class="highlight">These students don’t deserve to fall through the cracks.</p>
+  <p>That’s why Plum partners with local businesses to match students with the projects and mentors that will accelerate their development as community and professional leaders.</p>
+  <hr>
+</div>
+<div class="values-section">
+  <h2 class="values-heading">Plum: Partnerships for Learning, Unity, and Mentoring</h2>
+  
+  <div class="value-boxes">
+    <div class="value-box" style="background: linear-gradient(to right, rgba(124, 41, 70, 0.5), rgba(155, 70, 104, 0.2));">
+      <h3>Learning</h3>
+      <p>By focusing on experiential learning, we aim to equip students with real-world skills and insights into entrepreneurship, while offering small businesses the opportunity to learn from the fresh, innovative perspectives of the next generation.</p>
+    </div>
+
+    <div class="value-box" style="background: linear-gradient(to right, rgba(155, 70, 104, 0.5), rgba(182, 99, 138, 0.2));">
+      <h3>Unity</h3>
+      <p>By emphasizing unity, we aim to build bridges that enable mutual support & create an environment where experiential learning thrives, benefiting both students and small businesses in their pursuit of success together.</p>
+    </div>
+
+    <div class="value-box" style="background: linear-gradient(to right, rgba(182, 99, 138, 0.5), rgba(216, 129, 172, 0.2));">
+      <h3>Mentoring</h3>
+      <p>We believe in the power of mentorship to unlock potential, share wisdom, and guide the next generation towards success, while providing small business with fresh insights.</p>
+    </div>
+  </div>
+</div>
+<div class="how-it-works-container">
+  <div class="text-content">
+    <h2>How it works</h2>
+    <p>Whether you’re a student or a business owner, the process starts the same. Simply create a profile or post a project and we’ll recommend the students or projects that align with your needs.</p>
+    <p>We’re committed to delivering quality recommendations with the mission of building community networks that will last a lifetime.</p>
+    <p><strong>Visit our “For Students” and “For Employers” pages to learn more about our specific offerings.</strong></p>
+  </div>
+  <div class="image-content">
+    <img src="https://i.ibb.co/M6xH5Rm/Screen-Shot-2024-03-15-at-2-53-50-PM.png" alt="How it works image">
+  </div>
+</div>
+<div class="newsletter-banner">
+  <div class="newsletter-content">
+    <i class="fa fa-envelope" aria-hidden="true"></i>
+    <p>Sign up to receive our monthly newsletter!</p>
+    <input type="email" placeholder="Your email address...">
+    <button type="submit">Sign up!</button>
+  </div>
+</div>
+<div class="about-us">
+  <h2>About Us</h2>
+  <div class="arrow-divider"></div>
+  <p>At Plum, our journey began with a shared vision among four graduate students who, after moving to Connecticut, were captivated by its vibrant communities and untapped potential. Drawing from our diverse backgrounds, including firsthand community college experience, we've developed a deep understanding of the unique challenges and strengths within the local ecosystem. Our passion for fostering learning, unity, and mentoring drives us to create meaningful partnerships between community college students and local businesses, ensuring that every project not only contributes to professional growth but also strengthens the fabric of our beloved Connecticut communities.</p>
+</div>
+<div class="team-section">
+  <h2>Meet the team</h2>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="https://i.ibb.co/CzstvDX/image.png" alt="Halle Cook" class="profile-pic">
+      <h3>Halle Cook, MAIOP</h3>
+      <p>Between growing up with small business owners and being an alumni of my local community college back in Washington State, I feel extremely close to the issues Plum aims to address. I am eager to share my expertise as a student of I/O psychology to enhance the vibrant community I have come to love.</p>
+    </div>
+    
+    <div class="team-member">
+      <img src="https://i.ibb.co/74X9kBN/image-1.png" alt="Madelyn Kish" class="profile-pic">
+      <h3>Madelyn Kish, MAIOP</h3>
+      <p>As someone who was once swimming through internship postings, struggling to get hired, I wish I would have had a Plum to help out with my search. I hope to reach students and business owners who are looking for someone to be on their team and support their dreams and passions.</p>
+    </div>
+
+    <div class="team-member">
+      <img src="https://i.ibb.co/tKLQkZr/image-2.png" alt="Kristin Cambriello" class="profile-pic">
+      <h3>Kristin Cambriello, MAIOP</h3>
+      <p>I struggled with deciding which field I wanted to enter into. I had no experience in any potential field, so it was hard to make that decision without knowing what each option was like. I wish I had Plum to aid me in this decision. My goal is to find those students and help match them with their potential fields within their community.</p>
+    </div>
+
+    <div class="team-member">
+      <img src="https://i.ibb.co/ysbKrZ0/image-3.png" alt="Rachel Lee" class="profile-pic">
+      <h3>Rachel Lee, MAIOP</h3>
+      <p>Being able to expand your network and gain experience is vital for career development. Plum is the jumping point for many students and employers to continue their development.</p>
+    </div>
+  </div>
+<footer class="footer">
+  <div class="footer-left">
+    <img src="https://i.ibb.co/S0MVmCr/a6d008d4-73a1-4722-855c-5f12985adda1-1.png" alt="Plum Logo" class="footer-logo">
+    <h1>Plum</h1>
+  </div>
+  <div class="footer-right">
+    <p><i class="fas fa-envelope"></i> plummicrointernships@plum.com</p>
+    <p><i class="fab fa-linkedin"></i> linkedin.com/plum</p>
+    <p><i class="fas fa-phone"></i> (203) - 555 - 5555</p>
+  </div>
+</footer>

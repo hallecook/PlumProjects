@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plum - Microinternship Matching</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="students.html">For Students</a></li>
+      <li><a href="#employers.html">For Employers</a></li>
+      <li><a href="#FAQ.html">FAQs</a></li>
+    </ul>
+  </nav>
+  <div>
+    <div class="employers-page-container">
+        <div class="employers-header">
+          <div class="header-text">
+            <h2>For Employers</h2>
+            <h1>Your local partner in digital progress.</h1>
+            <p>We understand the unique challenges and opportunities your business faces in integrating modern technology with established practices. That’s why our platform matches you with unique talent, eager to offer their innovative solutions to the projects you’ve placed on the back burner.</p>
+              <p>By hiring one of our microinterns, you’re not just checking another project off the to - do list, you’re investing in the future of your community. </p>
+              <p>Join us in harnessing the potential of our local talent to create a more vibrant future for your business and community. </p>
+          </div>
+          <div class="header-images">
+            <div class="image-block dark-fill"></div>
+            <img src="https://i.ibb.co/g6GFCTg/employers.png" alt="People collaborating">
+            <div class="image-block light-fill"></div>
+            <img src="https://i.ibb.co/ZV0Jg7d/employers2.png" alt="Employers working">
+            <div class="image-block dark-fill grey-overlay"></div>
+            <img src="https://i.ibb.co/j9tTDn9/employers3.png" alt="coding">
+          </div>
+        </div>
+      </div>
+    </div>
+    <title>Dropdown Menu</title>
+    <style>
+      .dropbtn {
+        cursor: pointer;
+        width: 60px; /* Adjusted size */
+        height: 60px; /* Adjusted size */
+      }
+    
+      .dropdown {
+        position: fixed; /* Keeps the dropdown menu visible and in position during scrolling */
+        top: 20px;
+        left: 20px;
+        z-index: 1000; /* Ensures it's above other content */
+      }
+    
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #999999;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+    
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 18px; /* Increased font size for better readability */
+      }
+    
+      .dropdown-content a:hover {background-color: #ddd;}
+    
+      .show { display: block; }
+    </style>
+    </head>
+    <body>
+    
+    <div class="dropdown">
+      <img src="https://i.ibb.co/S0MVmCr/a6d008d4-73a1-4722-855c-5f12985adda1-1.png" alt="Menu" class="dropbtn">
+      <div class="dropdown-content" id="dropdownContent">
+        <a href="index.html">Home</a>
+        <a href="students.html">For Students</a>
+        <a href="employers.html">For Employers</a>
+        <a href="FAQ.html">FAQs</a>
+      </div>
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const dropBtn = document.querySelector('.dropbtn');
+        const dropdownContent = document.getElementById('dropdownContent');
+    
+        dropBtn.onclick = function() {
+          dropdownContent.classList.toggle('show');
+        }
+    
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            if (dropdownContent.classList.contains('show')) {
+              dropdownContent.classList.remove('show');
+            }
+          }
+        }
+      });
+    </script>
+    
+    </body>
+    </html>
+    <div class="employer-benefits-section">
+      <h2>Why hire our microinterns?</h2>
+      <div class="employer-benefit">
+        <i class="fas fa-dollar-sign"></i>
+        <p>Cost-effective talent solutions</p>
+      </div>
+      <div class="employer-benefit">
+        <i class="fas fa-award ribbon"></i> <!-- Example icon for 'Personalized Development' -->
+        <p>Personalized recommendations</p>
+      </div>
+      <div class="employer-benefit">
+        <i class="fas fa-users"></i>
+        <p>Community focused</p>
+      </div>
+    </div>
+</div>
+<div class="employer-how-it-works-section">
+  <h2>How it works</h2>
+  <p>We are pleased to offer a cost-effective talent solution that works for your business. Employers simply pay per project post. You determine the lump sum contract payment that is suitable for your project demands and we’ll do the rest. We recommend a lump sum equal to a $20 - $25 hourly rate for your project. Please note that Plum retains 8% of your payment to cover administration fees.</p>
+  <p>Due to the short nature of the projects, we do not complete background checks on our students. We do however, complete a screening interview with every student that creates a profile. Students are required to sign an NDA before the project begins. Projects that require students to work with sensitive information or minors under the age of 18 are prohibited. </p>
+  <p>Please contact us or view out FAQ page if you have any more questions.</p>
+</div>
+<div class="project-section">
+    <h2>Join the community and post your first project!</h2>
+    <a href="/employerproject.html" class="project-button">Click here to post a project</a>
+  </div>
+   </div>
+  <footer class="footer">
+    <div class="footer-left">
+      <img src="https://i.ibb.co/S0MVmCr/a6d008d4-73a1-4722-855c-5f12985adda1-1.png" alt="Plum Logo" class="footer-logo">
+      <h1>Plum</h1>
+    </div>
+    <div class="footer-right">
+      <p><i class="fas fa-envelope"></i> plummicrointernships@plum.com</p>
+      <p><i class="fab fa-linkedin"></i> linkedin.com/plum</p>
+      <p><i class="fas fa-phone"></i> (203) - 555 - 5555</p>
+    </div>
+  </footer>
