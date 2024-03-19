@@ -115,9 +115,6 @@ header {
   margin-top: 15px; /* Space above the slogan */
   color: white; /* Ensures slogan is white */
 }
-@media (min-width: 1200px) {
-  .branding h1 {
-    font-size: 80px;
 
 /* Additional responsive adjustments can be made for smaller screen sizes */
 .mission-statement {
