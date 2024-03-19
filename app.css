@@ -76,6 +76,7 @@ nav ul li a {
   
   /* Class to show the dropdown content */
   .show { display: block; }
+
 header {
   position: relative;
   height: 640px;
@@ -86,9 +87,8 @@ header {
 
 .header-content {
   position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50px; /* Space from the left */
-  transform: translateY(-50%); /* Adjusts vertical centering */
+  top: 400px; /* Adjusted to lower the logo/business name/slogan */
+  left: 100px; /* Provides spacing from the left */
   color: #ffffff;
 }
 
@@ -98,43 +98,45 @@ header {
 }
 
 .branding .logo {
-  width: auto; /* maintain aspect ratio */
-  height: 120px; /* Adjust the logo height */
+  height: 150px; /* Logo height to align with the business name */
 }
 
 .branding h1 {
-  font-size: 4rem; /* Adjusted font size */
+  font-size: 500px;
   font-family: 'Outfit', sans-serif;
-  margin-left: 20px; /* Space between logo and business name */
-  color: white; /* Ensure business name is white */
+  margin-left: 30px; /* Space between logo and business name */
+  color: #7C2946; /* Ensures business name is white */
 }
 
 .header-content h2 {
-  font-size: 2rem; /* Adjusted slogan size */
+  font-size: 60px;
   font-family: 'Outfit', sans-serif;
-  margin-top: 20px; /* Space above the slogan */
-  color: white; /* Ensure slogan is white */
+  margin-top: 15px; /* Space above the slogan */
+  color: white; /* Ensures slogan is white */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   .header-content {
-    left: 5%; /* Adjusts spacing for smaller devices */
+    left: 10%; /* Adjusts spacing for smaller devices */
   }
 
   .branding .logo {
-    height: 80px; /* Adjust logo size for smaller devices */
+    height: 90px; /* Adjust logo size for smaller devices */
   }
 
   .branding h1 {
-    font-size: 3rem; /* Adjust business name size for smaller devices */
+    font-size: 100px; /* Adjust business name size for smaller devices */
   }
 
   .header-content h2 {
-    font-size: 1.5rem; /* Adjust slogan size for smaller devices */
+    font-size: 25px; /* Adjust slogan size for smaller devices */
+    margin-left: 115px
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
   }
 }
-
 
 /* Additional responsive adjustments can be made for smaller screen sizes */
 .mission-statement {
