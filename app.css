@@ -87,7 +87,7 @@ header {
 
 .header-content {
   position: absolute;
-  top: 500px; /* Adjusted to lower the logo/business name/slogan */
+  top: 200px; /* Adjusted to lower the logo/business name/slogan */
   left: 100px; /* Provides spacing from the left */
   color: #ffffff;
 }
