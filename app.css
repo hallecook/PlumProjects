@@ -117,7 +117,7 @@ header {
 }
 @media (min-width: 1200px) {
   .branding h1 {
-    font-size: 120px;
+    font-size: 80px;
 
 /* Additional responsive adjustments can be made for smaller screen sizes */
 .mission-statement {
