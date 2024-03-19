@@ -116,29 +116,6 @@ header {
   color: white; /* Ensures slogan is white */
 }
 
-@media (max-width: 1440px) {
-  .header-content {
-    left: 10%; /* Adjusts spacing for smaller devices */
-  }
-
-  .branding .logo {
-    height: 90px; /* Adjust logo size for smaller devices */
-  }
-
-  .branding h1 {
-    font-size: 100px; /* Adjust business name size for smaller devices */
-  }
-
-  .header-content h2 {
-    font-size: 25px; /* Adjust slogan size for smaller devices */
-    margin-left: 115px
-  }
-
-  nav ul li a {
-    font-size: 0.8rem;
-  }
-}
-
 /* Additional responsive adjustments can be made for smaller screen sizes */
 .mission-statement {
   text-align: center;
