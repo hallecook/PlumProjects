@@ -10,10 +10,10 @@ body {
 }
 
 nav {
-  position: fixed;
   display: flex;
   justify-content: center;
   padding: 10px 0;
+  position: fixed;
   top: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.9);
@@ -43,12 +43,12 @@ nav ul li a {
   }
   
   /* Style the dropdown container to ensure it's fixed and follows scrolling */
-  .dropdown {
-    position: fixed; /* Keeps the dropdown menu visible and in position during scrolling */
-    top: 20px;
-    right: 20px;
-    z-index: 1000; /* Ensures it's above other content */
-  }
+ .dropdown {
+  position: fixed; /* Keeps the dropdown menu visible and in position during scrolling */
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensures it's above other content */
+}
   
   /* Control the appearance of the dropdown content */
   .dropdown-content {
