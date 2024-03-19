@@ -19,6 +19,27 @@
       <li><a href="FAQ.html">FAQs</a></li>
     </ul>
   </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+    // Select the navigation bar element
+    var navbar = document.querySelector('nav');
+    
+    // Function to fix the navbar at the top
+    function fixNavbar() {
+        navbar.style.position = 'fixed';
+        navbar.style.top = '0';
+        navbar.style.width = '100%';
+        navbar.style.zIndex = '1000';
+    }
+
+    // Fix the navbar when the page loads
+    fixNavbar();
+
+    // Optional: Re-apply the style on scroll to ensure it stays fixed (might be unnecessary but ensures consistency)
+    window.addEventListener('scroll', fixNavbar);
+});
+<script>
+    <body>
 </div>
 <header>
   <div class="header-content">
