@@ -103,7 +103,7 @@ header {
 }
 
 .branding h1 {
-  font-size: 400px;
+  font-size: 10vw;
   font-family: 'Outfit', sans-serif;
   margin-left: 30px; /* Space between logo and business name */
   color: #7C2946; /* Ensures business name is white */
@@ -115,6 +115,9 @@ header {
   margin-top: 15px; /* Space above the slogan */
   color: white; /* Ensures slogan is white */
 }
+@media (min-width: 1200px) {
+  .branding h1 {
+    font-size: 120px;
 
 /* Additional responsive adjustments can be made for smaller screen sizes */
 .mission-statement {
